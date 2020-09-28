@@ -30,8 +30,8 @@ public class PeriodicosDAO {
 "on publicacao_area_topico.codigo_topico = area_topico.codigo_topico");
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
-                dados.add(new Publicacao(rs.getInt("codigo_publicacao"),
-                rs.getString("titulo"), rs.getString("area_pesquisa"), rs.getString("data")
+                dados.add(new Publicacao(rs.getInt("Código"),
+                rs.getString("Titulo da Publicação"), rs.getString("Área da pesquisa"), rs.getString("Data")
                 ));
             }
             rs.close();

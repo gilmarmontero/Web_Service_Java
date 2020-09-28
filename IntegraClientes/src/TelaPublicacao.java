@@ -34,7 +34,7 @@ public class TelaPublicacao extends javax.swing.JFrame {
         
         for (int i = 0; i < lista.size(); i++) {
             System.out.println(lista.get(i).getTitulo());
-            tableModel.addColumn(new Object[]{lista.get(i).getCodigoPublicacao(), 
+            tableModel.addRow(new Object[]{lista.get(i).getCodigoPublicacao(), 
                 lista.get(i).getTitulo(),lista.get(i).getAreaPesquisa(), lista.get(i).getData()});
         }
         
